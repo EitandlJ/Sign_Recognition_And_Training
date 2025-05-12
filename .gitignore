@@ -1,0 +1,7 @@
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
