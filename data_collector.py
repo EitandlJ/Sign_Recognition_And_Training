@@ -1,7 +1,7 @@
 import cv2
 import csv
 import os
-from hand_recognizer import HandRecognizer  # Asegúrate de que este archivo está en la misma carpeta
+from hand_recognizer import HandRecognizer  
 
 class DataCollector:
     def __init__(self, output_file='data/dataset.csv', labels_file='data/labels.csv'):

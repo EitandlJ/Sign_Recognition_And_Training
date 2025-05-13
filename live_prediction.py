@@ -9,7 +9,7 @@ from hand_recognizer import HandRecognizer
 warnings.filterwarnings("ignore", category=UserWarning, message="X does not have valid feature names*")
 
 class SignLanguageRecognizer:
-    def __init__(self, model_path='gesture_model.pkl'):
+    def __init__(self, model_path):
         # Cargar el modelo entrenado
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"No se encontró el modelo en {model_path}")
@@ -156,7 +156,7 @@ class SignLanguageRecognizer:
 
 
 if __name__ == "__main__":
-    model_path = 'data/gesture_model.pkl'  # Cambia esto si tu modelo está en otra ubicación
+    model_path = 'data/gesture_model.pkl'  
     
     try:
         recognizer = SignLanguageRecognizer(model_path)
